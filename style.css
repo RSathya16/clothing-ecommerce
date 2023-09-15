@@ -1,0 +1,527 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    background: rgb(136, 130, 130);
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:40px ;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+.logo{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    margin-right: 600px;
+}
+
+.navbar a{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover{
+    color:rgb(157, 15, 15);
+}
+section{
+    padding: 5% 10%;
+}
+
+.main-home{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+ 
+}
+.homeImg{
+    position: absolute;
+    height: auto;
+    width:430px;
+    box-shadow: 5px 5px 5px rgb(56, 55, 55);
+    top:160px;
+    right:60px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: width 0.6s ease-in-out;
+}
+.homeImg:hover{
+    opacity: 1;
+    width: 470px;
+    
+    
+}
+.main-text{
+    position: absolute;
+    left:95px;
+    
+}
+.main-text h5{
+    color: rgb(157, 15, 15);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color:black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+
+}
+.main-button{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 12px 25px;
+   
+    transition: width 0.7s ease-in-out;
+    text-decoration: none;
+}
+.main-button:hover{
+    background-color: black;
+    color: white;
+    
+}
+.main-button i{
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgb(136, 130, 130);
+    
+}
+.query{
+    display :none;
+}
+
+section .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+
+.profile img{
+    height: 100px;
+    width: 100px;
+    align-items:center;
+    border-radius: 50%;
+    background: black;
+    padding: 1.5px;
+
+}
+.profile .name,
+.profile .purpose{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+.profile .button{
+    display: flex;
+    align-items: center;
+    padding:8px 20px ;
+    margin-top: 15px;
+    background:black;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.profile .button:hover{
+    background: rgb(157, 15, 15);;
+}
+.profile .button button{
+    background: none;
+    outline: none;
+    border:none;
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+   
+}
+section .popup{
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    bottom:220px;
+    transition:all 0.5s ease-in-out;
+    opacity: 0;
+    
+    
+    
+    
+}
+
+
+.Parent{
+    position: absolute;
+    background: rgb(77, 70, 70);
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    display:none;
+}
+
+section .popup-box{
+    position: relative;
+    background: linear-gradient(130deg, white,rgb(103, 93, 93));
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    transition:all 1s ease-in-out;
+    box-shadow: 0 8px 8px 8px rgb(159, 146, 146);
+    
+
+}
+.popup-box .Closeicon{
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    right:10px;
+    top:10px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.popup-box .Closeicon:hover{
+    opacity: 1;
+}
+
+.popup-box .Closeicon:before, .popup-box .Closeicon:after{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    right:10px;
+    top:10px;
+    content: " ";
+    background: black;
+
+}
+.popup-box .Closeicon:before{
+    transform:rotate(45deg);
+}
+.popup-box .Closeicon:after{
+    transform:rotate(-45deg);
+}
+
+section .popup-box .profile-text{
+    display: flex;
+    align-items: center;
+}
+section .popup img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-text .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.profile-text .text .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile-text .text .name:before{
+    content: "!...";
+}
+.profile-text .text .purpose{
+    font-size: 15px;
+    font-weight: 600;
+}
+section .popup-box textarea{
+    padding:12px;
+    height: 100px;
+    width:100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline:none;
+    border: 1px solid rgb(219, 216, 216);
+    resize:none;
+    font-size: 15px;
+    font-weight: 400;
+    background: rgb(219, 216, 216);
+
+}
+section .popup-box .button{
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+    
+}
+
+section .popup-box .button button{
+    outline: none;
+    border: none;
+    padding:7px 16px;
+    border-radius: 5px;
+    background:rgb(202, 99, 159);
+    margin-left: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+.button button.cancel:hover{
+    background:rgb(199, 63, 142);
+}
+.button button.send:hover{
+    background:rgb(199, 63, 142);
+}
+
+.message .success{
+    font-size: 20px;
+    color:green;
+    position: absolute;
+    animation: buttons .5s linear;
+    display:none;
+    text-shadow: 2px rgb(10, 101, 10);
+    bottom: 200px;
+    left:640px;
+    font-weight: 600;
+    
+}
+ .danger{
+    font-size: 15px;
+    color: rgb(157, 15, 15);
+    position: absolute;
+    animation: buttons .5s linear;
+    display: none;
+    top:85px;
+    font-weight: 600;
+    left:140px;
+
+}
+
+.about{
+    width: 100%;
+    padding: 100px 100px;
+    background: rgb(136, 130, 130);
+    display: none;
+    
+}
+.about img{
+    height:auto;
+    margin-top: 56px;
+    width:440px;
+    box-shadow: 5px 5px 5px rgb(56, 55, 55);
+    border-radius: 10px;
+    opacity: 0.6;
+    margin-left: -172px;
+    transition: width 0.7s ease-in-out;
+}
+.about img:hover{
+    opacity: 1;
+    width:480px;
+    
+  
+}
+.about-text{
+    width:600px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.about-text h2{
+    color: black;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    margin-left: -120px;
+
+}
+.about-text h4{
+    color: rgb(162, 13, 13);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-shadow: 2px gray;
+    margin-left: -120px;
+    
+}
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-shadow: 4px 0 grey;
+    margin-left: -117px;
+    opacity: 0.8;
+}
+.contactinfo{
+    display: none;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+    
+    
+}
+.contact-text{
+    font-size: 55px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color:rgb(162, 13, 13);
+}
+.contact-text h5{
+    margin: 15px 0;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text p{
+    color: black;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li i{
+    color:rgb(162, 13, 13);
+}
+.contact-list li a:hover{
+    color:rgb(162, 13, 13) ;
+    transform: scale(1.02) translateY(-5px);
+    
+}
+.contact-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+}
+.contact-icons a:hover{
+   
+    width: 40px;
+    height: 40px;
+    color:rgb(162, 13, 13);
+   
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+    border: 1px solid black;
+    outline: none;
+    width: 50px;
+    padding:18px;
+    width: 130%;
+    position: relative;
+    background:rgb(136, 130, 130);
+    color:black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    top:73px;
+   
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form .sendbutton{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding:8px 20px;
+    top:505px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    color: white;
+    background:black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 300;
+    right: 48px;
+    
+}
+.contact-form .sendbutton:hover{
+    background:rgb(162, 13, 13) ;
+}

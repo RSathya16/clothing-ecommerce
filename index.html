@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7bc8f6bf0c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <link href="style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Alalia</a>
+    <nav class="navbar">
+        <a href="#" id="homenav">Home</a>
+        <a href="#" id="aboutnav">About</a>
+        <a href="#" id="querynav">Queries</a>
+        <a href="#" id="contactnav">Contact</a>
+    </nav>
+</header>
+<section class="main-home" id="main-home">
+    <img class ="homeImg" src="/homeimage1.jpg"></img>
+    <div class="main-text">
+        <h5>IndoWestern Collections</h5>
+        <h1> New IndoWestern <br> Collections</h1>
+        <p>There's Nothing Like customisation</p>
+        <a href="#" class="main-button">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
+
+        <section class="about" id="about">
+            <div class="main">
+                <img src="/homeimage.jpg">
+            </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <h4>Costume Designer</h4>
+                    <p>I am a costume designer. I have a team to style your dream Outfit as your Preference. 
+                        We can provide you the latest and trendy collections. And also all our costume is customisable.
+                         We think that customisation is the best and unique part in our boutique. 
+                         We also have a rental clothes for your Big events with plenty of trendy designs.
+                         Our team is there to make your big day very stylish and comfortable. </p>
+                
+                </div>
+    </section>
+    <section class="query">
+        <div class="profile" id="profile">
+            <div class="img">
+                <img src="/homeimage.jpg">
+
+            </div>
+            <span class="name">Alalia</span>
+            <span class="purpose">Style Your Outfit</span>
+           
+            <div id="queryButton" class="button" >
+                <button>Queries</button>
+            </div>
+        </div>
+        <div class="Parent"></div>
+        <div class="popup" >
+            <div class="popup-box">
+                <span id="closeButton" onclick="closePopup()" class="Closeicon">
+                   
+
+                </span>
+                <div class="profile-text">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.a4KK1uL9lSMAVwHPXk0TCwHaHa&pid=Api&P=0&h=180">
+                    <div class="text">
+                        <span class="name">Alalia</span>
+                        <span class="purpose">Style Your Outfit</span>
+                    </div>
+                </div>
+                <form action="#">
+                    <textarea id="typetext" class="typetext" placeholder="Type of outfit you want to style"></textarea>
+                    <div class="button">
+                        <button  class="cancel" onclick="closePopup()">Cancel</button>
+                        <button class="send"onclick="message()"> Send</button>
+                    </div>
+                    
+                        <div class="danger" id="danger">your Field is Empty</div>
+                   
+                </form>
+            </div>
+        </div>
+        </section>
+    <div class="message">
+        <div class="success" id="success">Your Query is Successfully Sent..!</div>
+    </div>
+
+    
+           
+    </section>
+<section class="contactinfo">
+    <div id="contact" class="contact">
+        <div class="contact-text">
+                <h2>Contact <span>Us</span></h1>
+                    <h5>Keep In Touch</h5>
+                    <p>Don’t hesitate to reach out. As always, we’re here to help you. So, if you have any clarification regarding your costume customization, you just have to conatact Us</p>
+                    <div id="contact-list" class="contact-list">
+                    <li> <i class="fa-solid fa-paper-plane"></i>      alaliacostume@gmail.com</li>
+                    <li> <i class="fa-solid fa-phone"></i>     9043562103</li>
+                    </div>
+                    <div id="contact-icons" class="contact-icons">
+                        <a href="#"><i class="fa-brands fa-facebook" ></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+            </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+                    <button id="sendButton" class="sendbutton" >Send</button>
+
+                </form>
+                
+                    
+           
+            
+            </section>
+   
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
