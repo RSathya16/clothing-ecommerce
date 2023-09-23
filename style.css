@@ -561,7 +561,10 @@ section .popup-box .button button{
    .header .navbar{
     display: none;
    }
-   .main-home{
+   .main-home a i{
+    position: absolute;
+    top: 14px;
+    right: 10px
    
    }
 
