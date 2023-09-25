@@ -60,8 +60,8 @@
             </div>
         </div>
         <div class="Parent"></div>
-        <div class="popup" >
-            <div class="popup-box">
+       
+         <div class="popup-box">
                 <span id="closeButton" onclick="closePopup()" class="Closeicon">
                    
 
@@ -73,8 +73,8 @@
                         <span class="purpose">Style Your Outfit</span>
                     </div>
                 </div>
-                <form action="#">
-                    <textarea id="typetext" class="typetext" placeholder="Type of outfit you want to style"></textarea>
+                <form class ="popupInput" action="#">
+                    <textarea id="typetext" class="typetext" value ='' placeholder="Type of outfit you want to style"></textarea>
                     <div class="button">
                         <button  class="cancel" onclick="closePopup()">Cancel</button>
                         <button class="send"onclick="message()"> Send</button>
@@ -84,7 +84,7 @@
                    
                 </form>
             </div>
-        </div>
+        
         </section>
     <div class="message">
         <div class="success" id="success">Your Query is Successfully Sent..!</div>
