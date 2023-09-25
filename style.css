@@ -10,7 +10,9 @@
 
 }
 
-
+.navbar{
+    display: none;
+}
 .header{
     position:fixed;
     top:0;
@@ -31,6 +33,19 @@
 }
 
 .navbar a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35px;
+    transition: .3s;
+  }
+  
+  .navbar a:hover{
+      color:rgb(157, 15, 15);
+  }
+
+.navbarPC a{
   font-size: 20px;
   color: black;
   text-decoration: none;
@@ -39,7 +54,7 @@
   transition: .3s;
 }
 
-.navbar a:hover{
+.navbarPC a:hover{
     color:rgb(157, 15, 15);
 }
 section{
@@ -540,10 +555,53 @@ section .popup-box .button button{
 }
 
 
+.product-filter {
+    display: flex;
+  }
+  .product-filter h1 {
+    flex-grow: 1;
+  }
+.sort {
+  display: flex;
+}
+.collection-sort {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .products {
+    display: none;
+    flex-wrap: wrap;
+    height: max-content;
+    margin: 50px;
+    background:rgb(136, 130, 130);
+  }
+  
+  .product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    flex-direction: column;
+  
+    display: flex; /* so child elements can use flexbox stuff too! */
+  }
 
+  .product-card {
+    flex: 1 16%;
+  }
 
+  .product-image img {
+    width:100px;
+    height: 100px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    
+  }
 
 
 @media only screen and (max-width: 600px){
@@ -552,6 +610,95 @@ section .popup-box .button button{
         width: auto;
         height: auto;
     }
+    .navbarPC {
+        display: none;
+    }
+    .navbar{
+       
+        flex-direction: column;
+        align-items: flex-start;
+        background-color:rgb(136, 130, 130);
+        position: absolute;
+        justify-content: center; 
+        align-items: center; 
+        top: 74px;
+        padding: 42px;
+        border-radius: 0px 0px 12px 12px;
+        line-height: 40px;
+        right: -14px;
+        width: 410px;
+        height: 200px;
+        box-shadow: 5px 5px 5px rgb(56, 55, 55);
+        animation: openMenu 1s;
+    
+}
+
+@keyframes openMenu {
+  from {height: 0px;}
+  to {height: 200px;}
+}
+
+.toggle-button{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+ }
+ .toggle-button .hamburgerBar{
+    width: 35px;
+    height: 4px;
+    background: #faf9f9;
+    box-shadow: 5px 5px 5px rgb(56, 55, 55);
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+ }
+ .toggle-button .hamburgerBar::before,
+ .toggle-button .hamburgerBar::after{
+     content: "";
+     position: absolute;
+     width: 35px;
+     height: 4px;
+     background: #faf9f9;
+     box-shadow: 5px 5px 5px rgb(56, 55, 55);
+     border-radius: 5px;
+     transition: all 1s ease-in-out;
+ }
+ .toggle-button .hamburgerBar::before{
+     transform: translateY(-12px);
+ }
+ .toggle-button .hamburgerBar::after{
+     transform: translateY(12px);
+ }
+ .toggle-button.open .hamburgerBar{
+     transform: translateX(-50px);
+     background: transparent;
+     box-shadow: none;
+ 
+ }
+ 
+ .toggle-button.open .hamburgerBar::before{
+    box-shadow:none;
+     transform: rotate(45deg) translate(35px,-35px);
+
+ }
+ .toggle-button.open .hamburgerBar::after{
+    box-shadow:none;
+     transform:  rotate(-45deg) translate(35px,35px);
+ }
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar {
+        padding: .5rem 1rem;
+        text-align: center;
+        font-size:15px;
+        justify-content: space-between;
+        display: none; 
+        
+    }
+   
+    
    .header{
     padding:15px;
     background: rgb(136, 130, 130);
@@ -562,9 +709,7 @@ section .popup-box .button button{
    .header .text{
     font-size: 35px;
    }
-   .header .navbar{
-    display: none;
-   }
+   
    .main-home a i{
     position: absolute;
     top: 14px;
@@ -579,9 +724,7 @@ section .popup-box .button button{
    .main-text{
     top: 200px;
    }
-   .main-text h5{
-    
-   }
+   
    .main-text h1{
     position: absolute;
     top: 45px;
@@ -690,266 +833,4 @@ section .popup-box{
   }
 
     }
-    
 
-
-@media only screen and (min-width: 601px ) and ( max-width: 800px){
-    .navbar a{
-        font-size: 20px;
-        color: black;
-        text-decoration: none;
-        font-weight: 700;
-        margin-left: 300px;
-        transition: .3s;
-      }
-
-      .homeImg{
-        position: absolute;
-        height: auto;
-        width:330px;
-        box-shadow: 5px 5px 5px rgb(56, 55, 55);
-        top:185px;
-        right:55px;
-        border-radius: 10px;
-        opacity: 0.6;
-        transition: width 0.6s ease-in-out;
-    }
-    .homeImg:hover{
-        opacity: 1;
-        width: 360px;
-        
-        
-    }
-    .main-text{
-        position: absolute;
-        left:75px;
-        width: 270px;
-        
-    }
-    .main-text h5{
-        color: rgb(157, 15, 15);
-        font-size: 18px;
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-    .main-text h1{
-        color:black;
-        font-size: 55px;
-        text-transform: capitalize;
-        line-height: 1.1;
-        font-weight: 600;
-        margin: 6px 0 10px;
-    }
-    .main-text p{
-        color: black;
-        font-size: 19px;
-        font-style: italic;
-        margin-bottom: 20px;
-    
-    }
-    .main-button{
-        
-        color: black;
-        font-size: 16px;
-        font-weight: 600;
-        width:150px;
-        height: 50px;
-        border: 2px solid black;
-        padding: 12px 25px;
-        position: absolute;
-        left: 80px;
-        bottom: 150px;
-        transition: width 0.7s ease-in-out;
-        text-decoration: none;
-    }
-    .main-button:hover{
-        background-color: black;
-        color: white;
-        
-    }
-    .main-button i{
-        vertical-align: middle;
-        background: transparent;
-        border: none;
-    }
-
-
-    .about img{
-        height:auto;
-        margin-top: 56px;
-        width:280px;
-        box-shadow: 5px 5px 5px rgb(56, 55, 55);
-        border-radius: 10px;
-        opacity: 0.6;
-        margin-left: -192px;
-        transition: width 0.7s ease-in-out;
-    }
-    .about img:hover{
-        opacity: 1;
-        width:310px;
-        
-      
-    }
-    .about-text{
-        width:600px;
-    }
-    .main{
-        width:1150px;
-        max-width: 95%;
-        margin:0 auto ;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    
-    }
-    .about-text h2{
-        color: black;
-        font-size: 45px;
-        text-transform: capitalize;
-        margin-top: 100px;
-        margin-left: -120px;
-    
-    }
-    .about-text h4{
-        color: rgb(162, 13, 13);
-        letter-spacing: 2px;
-        font-size: 19px;
-        margin-bottom: 25px;
-        text-transform: capitalize;
-        text-shadow: 2px gray;
-        margin-left: -120px;
-        
-    }
-    .about-text p{
-        color: black;
-        letter-spacing: 1px;
-        line-height: 28px;
-        font-size: 15px;
-        margin-bottom: 45px;
-        text-align: justify;
-        text-shadow: 4px 0 grey;
-        margin-left: -117px;
-        opacity: 0.8;
-    }
-
-
-    .contact-text{
-        font-size: 40px;
-        line-height: 1;
-        text-align: center;
-        width: 150%;
-    }
-    .contact-text h2 span{
-        color:rgb(162, 13, 13);
-    }
-    .contact-text h5{
-        margin: 15px 0;
-        color:black;
-        font-size: 18px;
-        font-weight: 600;
-    }
-    .contact-text p{
-        color: black;
-        font-size: 15px;
-        line-height: 30px;
-        margin-bottom: 2rem;
-    }
-    .contact-list{
-        margin-bottom: 3rem;
-        font-size: 17px;
-    }
-    .contact-list li{
-        margin-bottom: 10px;
-        display: block;
-    }
-    .contact-list li{
-        margin-bottom: 10px;
-        display: block;
-    }
-    .contact-list li i{
-        color:rgb(162, 13, 13);
-    }
-    .contact-list li a:hover{
-        color:rgb(162, 13, 13) ;
-        transform: scale(1.02) translateY(-5px);
-        
-    }
-    .contact-icons a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        background: transparent;
-        border: 2px solid black;
-        border-radius: 50%;
-        font-size: 20px;
-        color: black;
-        transition: all 0.6s ease-in-out;
-        text-decoration: none;
-    }
-    .contact-icons a:hover{
-       
-        width: 40px;
-        height: 40px;
-        color:rgb(162, 13, 13);
-       
-    }
-    .contact-form form{
-        position: relative;
-        right: 30px;
-        
-    }
-    .contact-form form input,form textarea{
-        border: 1px solid black;
-        outline: none;
-        
-        padding:18px;
-        width: 140%;
-        position: relative;
-        background:rgb(136, 130, 130);
-        color:black;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-        top:73px;
-       
-    }
-    .contact-form textarea{
-        resize: none;
-        height: 220px;
-    }
-    .contact-form .sendbutton{
-        display: flex;
-        position: absolute;
-        align-items: center;
-        padding:8px 20px;
-        top:490px;
-        text-align: center;
-        justify-content: center;
-        font-size: 20px;
-        text-decoration: none;
-        background: none;
-        outline: none;
-        color: white;
-        background:black;
-        border-radius: 10px;
-        cursor: pointer;
-        width: 100px;
-        font-weight: 300;
-        right: 20px;
-        
-    }
-
-    section .popup-box{
-        left: 200px;
-        background: rgb(136, 130, 130);
-    }
-    
-    .message .success{
-       
-        bottom: 350px;
-        left:250px;
-    }
-}
