@@ -18,6 +18,8 @@ document.getElementById("homenav").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 document.querySelector("#aboutnav").addEventListener("click", function () {
   document.querySelector(".main-home").style.display = "none";
@@ -25,6 +27,8 @@ document.querySelector("#aboutnav").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 document.getElementById("querynav").addEventListener("click", function () {
   console.log("text");
@@ -33,6 +37,8 @@ document.getElementById("querynav").addEventListener("click", function () {
   document.querySelector(".query").style.display = "flex";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 
 document.getElementById("contactnav").addEventListener("click", function () {
@@ -42,6 +48,8 @@ document.getElementById("contactnav").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "flex";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 
 document.getElementById("homenavPC").addEventListener("click", function () {
@@ -51,6 +59,8 @@ document.getElementById("homenavPC").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 document.querySelector("#aboutnavPC").addEventListener("click", function () {
   document.querySelector(".main-home").style.display = "none";
@@ -58,6 +68,8 @@ document.querySelector("#aboutnavPC").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 document.getElementById("querynavPC").addEventListener("click", function () {
   console.log("text");
@@ -66,6 +78,8 @@ document.getElementById("querynavPC").addEventListener("click", function () {
   document.querySelector(".query").style.display = "flex";
   document.querySelector(".contactinfo").style.display = "none";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 
 document.getElementById("contactnavPC").addEventListener("click", function () {
@@ -75,6 +89,8 @@ document.getElementById("contactnavPC").addEventListener("click", function () {
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "flex";
   document.querySelector(".products").style.display = "none";
+  document.querySelector(".danger").style.display = "none";
+    document.querySelector(".success").style.display = "none";
 });
 
 document.getElementById("queryButton").addEventListener("click", function () {
@@ -97,6 +113,7 @@ console.log("typetext",typetext)
     document.querySelector(".success").style.display = "flex";
     document.querySelector(".popup").style.visibility = "hidden";
     document.querySelector(".Parent").style.display = "none";
+    
   } else {
     console.log("text2");
     document.querySelector(".danger").style.display = "flex";
