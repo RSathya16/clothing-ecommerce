@@ -80,28 +80,29 @@ document.getElementById("contactnavPC").addEventListener("click", function () {
 document.getElementById("queryButton").addEventListener("click", function () {
   document.querySelector(".popup").style.visibility = "visible";
   document.querySelector(".Parent").style.display = "flex";
-  document.querySelector(".typetext").value = " ";
+  document.querySelector(".typetext").value = "";
   document.querySelector(".popup").style.opacity = 1;
   document.querySelector(".products").style.display = "none";
 });
-function message() {
+document.getElementById("message").addEventListener("click", function () {
+  console.log("message inside")
   const typetext = document.getElementById("typetext").value;
   const success = document.getElementById("success");
   const danger = document.getElementById("danger");
-
+console.log("typetext",typetext)
   if (typetext !== "") {
-    console.log("text");
+    console.log("text1");
     document.querySelector(".popup").style.opacity = 0;
     document.querySelector(".danger").style.display = "none";
     document.querySelector(".success").style.display = "flex";
     document.querySelector(".popup").style.visibility = "hidden";
     document.querySelector(".Parent").style.display = "none";
   } else {
-    console.log("text");
+    console.log("text2");
     document.querySelector(".danger").style.display = "flex";
     document.querySelector(".success").style.display = "none";
   }
-}
+})
 document.getElementById("queryButton").addEventListener("click", function () {
   document.querySelector(".danger").style.display = "none";
   document.querySelector(".success").style.display = "none";
