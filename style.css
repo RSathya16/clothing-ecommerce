@@ -214,7 +214,7 @@ section .popup{
     justify-content: center;
     height: 100%;
     width: 100%;
-    bottom:220px;
+    bottom:613px;
     transition:all 0.5s ease-in-out;
     opacity: 0;
     
@@ -240,7 +240,7 @@ section .popup-box{
     max-width: 400px;
     width: 100%;
     border-radius: 10px;
-    top:330px;
+    top:600px;
     transition:all 1s ease-in-out;
     box-shadow: 0 8px 8px 8px rgb(159, 146, 146);
     
@@ -248,8 +248,6 @@ section .popup-box{
 }
 .popup-box .Closeicon{
     position: absolute;
-    width: 10px;
-    height: 12px;
     right:10px;
     top:10px;
     opacity: 0.4;
@@ -306,7 +304,7 @@ section .popup-box textarea{
     padding:12px;
     height: 100px;
     width:100%;
-    margin-top: 20px;
+    margin-top: -44px;
     border-radius: 10px;
     outline:none;
     border: 1px solid rgb(219, 216, 216);
@@ -319,7 +317,7 @@ section .popup-box textarea{
 section .popup-box .button{
     display: flex;
     justify-content: end;
-    margin-top: 16px;
+    margin-top: 76px;
     
 }
 
@@ -359,7 +357,7 @@ section .popup-box .button button{
     position: absolute;
     animation: buttons .5s linear;
     display: none;
-    top:85px;
+    top:98px;
     font-weight: 600;
     left:140px;
 
@@ -637,6 +635,14 @@ section .popup-box .button button{
   to {height: 200px;}
 }
 
+
+.message .success{
+    bottom:290px;
+    left:70px
+}
+section .popup-box{
+    top:45px;
+}
 .toggle-button{
     display: flex;
     position: relative;
@@ -832,6 +838,66 @@ section .popup-box .button button{
     margin: 0px;
     padding-top: 100px;
   }
+  section .popup{
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    bottom:220px;
+    transition:all 0.5s ease-in-out;
+    opacity: 0;
+    
+    
+    
+    
+}
+
+
+.Parent{
+    position: absolute;
+    background: rgb(77, 70, 70);
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    display:none;
+}
+
+section .popup-box{
+    position: relative;
+    background: linear-gradient(130deg, white,rgb(103, 93, 93));
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    top:40px;
+    transition:all 1s ease-in-out;
+    box-shadow: 0 8px 8px 8px rgb(159, 146, 146);
+    
+
+}
+section .popup-box textarea{
+    padding:12px;
+    height: 100px;
+    width:100%;
+    margin-top: -44px;
+    border-radius: 10px;
+    outline:none;
+    border: 1px solid rgb(219, 216, 216);
+    resize:none;
+    font-size: 15px;
+    font-weight: 400;
+    background: rgb(219, 216, 216);
+
+}
+section .popup-box .button{
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+    
+}
 }
   @media screen and (min-width: 600px) and (max-width:800px){
 
@@ -1216,7 +1282,7 @@ section .popup-box .button button{
         width: 100%;
         border-radius: 10px;
         left: 15px;
-        top:348px;
+        top:-86px;
         transition:all 1s ease-in-out;
         box-shadow: 0 8px 8px 8px rgb(159, 146, 146);
         
@@ -1235,4 +1301,3 @@ section .popup-box .button button{
 }
 
     
-
