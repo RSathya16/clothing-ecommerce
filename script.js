@@ -17,12 +17,14 @@ document.getElementById("homenav").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 document.querySelector("#aboutnav").addEventListener("click", function () {
   document.querySelector(".main-home").style.display = "none";
   document.querySelector(".about").style.display = "flex";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 document.getElementById("querynav").addEventListener("click", function () {
   console.log("text");
@@ -30,6 +32,7 @@ document.getElementById("querynav").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "flex";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 
 document.getElementById("contactnav").addEventListener("click", function () {
@@ -38,6 +41,7 @@ document.getElementById("contactnav").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "flex";
+  document.querySelector(".products").style.display = "none";
 });
 
 document.getElementById("homenavPC").addEventListener("click", function () {
@@ -46,12 +50,14 @@ document.getElementById("homenavPC").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 document.querySelector("#aboutnavPC").addEventListener("click", function () {
   document.querySelector(".main-home").style.display = "none";
   document.querySelector(".about").style.display = "flex";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 document.getElementById("querynavPC").addEventListener("click", function () {
   console.log("text");
@@ -59,6 +65,7 @@ document.getElementById("querynavPC").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "flex";
   document.querySelector(".contactinfo").style.display = "none";
+  document.querySelector(".products").style.display = "none";
 });
 
 document.getElementById("contactnavPC").addEventListener("click", function () {
@@ -67,6 +74,7 @@ document.getElementById("contactnavPC").addEventListener("click", function () {
   document.querySelector(".about").style.display = "none";
   document.querySelector(".query").style.display = "none";
   document.querySelector(".contactinfo").style.display = "flex";
+  document.querySelector(".products").style.display = "none";
 });
 
 document.getElementById("queryButton").addEventListener("click", function () {
@@ -74,6 +82,7 @@ document.getElementById("queryButton").addEventListener("click", function () {
   document.querySelector(".Parent").style.display = "flex";
   document.querySelector(".typetext").value = " ";
   document.querySelector(".popup").style.opacity = 1;
+  document.querySelector(".products").style.display = "none";
 });
 function message() {
   const typetext = document.getElementById("typetext").value;
