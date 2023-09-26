@@ -347,7 +347,7 @@ section .popup-box .button button{
     display:none;
     text-shadow: 2px rgb(10, 101, 10);
     bottom: 200px;
-    left:640px;
+    left:517px;
     font-weight: 600;
     
 }
@@ -596,10 +596,7 @@ section .popup-box .button button{
     object-fit: cover;
     
   }
-  .product-card:hover{
-    opacity: 0.7;
-  }
-
+ 
 
 @media screen and (max-width: 600px){
     *{
@@ -607,6 +604,9 @@ section .popup-box .button button{
         width: auto;
         height: auto;
     }
+    .product-card:hover{
+        opacity: 0.7;
+      }
     .navbarPC {
         display: none;
     }
@@ -904,6 +904,7 @@ section .popup-box .button{
     .navbarPC {
         display: none;
     }
+    
     .navbar{
        
         flex-direction: column;
