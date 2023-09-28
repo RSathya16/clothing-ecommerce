@@ -25,7 +25,7 @@
     z-index:100;
 }
 .logo{
-    font-size: 40px;
+    font-size: 35px;
     color: black;
     text-decoration: none;
     font-weight: 800;
@@ -33,7 +33,7 @@
 }
 
 .navbar a{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     text-decoration: none;
     font-weight: 700;
@@ -46,7 +46,7 @@
   }
 
 .navbarPC a{
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
   font-weight: 700;
@@ -76,17 +76,17 @@ section{
 .homeImg{
     position: absolute;
     height: auto;
-    width:430px;
+    width:400px;
     box-shadow: 5px 5px 5px rgb(56, 55, 55);
     top:160px;
-    right:60px;
+    right:140px;
     border-radius: 10px;
     opacity: 0.6;
     transition: width 0.6s ease-in-out;
 }
 .homeImg:hover{
     opacity: 1;
-    width: 470px;
+    width: 440px;
     
     
 }
@@ -97,13 +97,13 @@ section{
 }
 .main-text h5{
     color: rgb(157, 15, 15);
-    font-size: 20px;
+    font-size: 17px;
     text-transform: capitalize;
     font-weight: 500;
 }
 .main-text h1{
     color:black;
-    font-size: 65px;
+    font-size: 60px;
     text-transform: capitalize;
     line-height: 1.1;
     font-weight: 600;
@@ -111,7 +111,7 @@ section{
 }
 .main-text p{
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
     margin-bottom: 20px;
 
@@ -119,15 +119,15 @@ section{
 .main-button{
     
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    width:150px;
-    height: 50px;
+    width:131px;
+    height: 42px;
     border: 2px solid black;
     padding: 12px 25px;
     position: absolute;
     left: 100px;
-    bottom: 200px;
+    bottom: 213px;
     transition: width 0.7s ease-in-out;
     text-decoration: none;
 }
@@ -212,8 +212,8 @@ section .popup{
     visibility: hidden;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
+    height: 900px;
     bottom:613px;
     transition:all 0.5s ease-in-out;
     opacity: 0;
@@ -237,10 +237,11 @@ section .popup-box{
     position: relative;
     background: linear-gradient(130deg, white,rgb(103, 93, 93));
     padding: 30px;
-    max-width: 400px;
-    width: 100%;
+    max-width: 367px;
+    width: 72%;
+    
     border-radius: 10px;
-    top:600px;
+    top:628px;
     transition:all 1s ease-in-out;
     box-shadow: 0 8px 8px 8px rgb(159, 146, 146);
     
@@ -279,8 +280,8 @@ section .popup-box .profile-text{
     align-items: center;
 }
 section .popup img{
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -290,21 +291,23 @@ section .popup img{
     margin-left: 10px;
 }
 .profile-text .text .name{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 .profile-text .text .name:before{
     content: "!...";
 }
 .profile-text .text .purpose{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
 }
 section .popup-box textarea{
     padding:12px;
-    height: 100px;
-    width:100%;
-    margin-top: -44px;
+    height: 110px;
+    width: 80%;
+    position: absolute;
+    left: 34px;
+    top: 89px;
     border-radius: 10px;
     outline:none;
     border: 1px solid rgb(219, 216, 216);
@@ -313,11 +316,14 @@ section .popup-box textarea{
     font-weight: 400;
     background: rgb(219, 216, 216);
 
+
+
 }
 section .popup-box .button{
     display: flex;
     justify-content: end;
-    margin-top: 76px;
+    margin-top: 115px;
+    
     
 }
 
@@ -340,26 +346,26 @@ section .popup-box .button button{
 }
 
 .message .success{
-    font-size: 20px;
+    font-size: 16px;
     color:green;
     position: absolute;
     animation: buttons .5s linear;
     display:none;
     text-shadow: 2px rgb(10, 101, 10);
     bottom: 200px;
-    left:517px;
+    left:660px;
     font-weight: 600;
     
 }
  .danger{
-    font-size: 15px;
+    font-size: 12px;
     color: rgb(157, 15, 15);
     position: absolute;
     animation: buttons .5s linear;
     display: none;
-    top:98px;
+    top:72px;
     font-weight: 600;
-    left:140px;
+    left:151px;
 
 }
 
@@ -373,7 +379,7 @@ section .popup-box .button button{
 .about img{
     height:auto;
     margin-top: 56px;
-    width:440px;
+    width:390px;
     box-shadow: 5px 5px 5px rgb(56, 55, 55);
     border-radius: 10px;
     opacity: 0.6;
@@ -382,7 +388,7 @@ section .popup-box .button button{
 }
 .about img:hover{
     opacity: 1;
-    width:480px;
+    width:428px;
     
   
 }
@@ -400,31 +406,32 @@ section .popup-box .button button{
 }
 .about-text h2{
     color: black;
-    font-size: 55px;
+    font-size: 45px;
     text-transform: capitalize;
     margin-bottom: 8px;
-    margin-left: -120px;
+    margin-left: -150px;
 
 }
 .about-text h4{
     color: rgb(162, 13, 13);
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 17px;
     margin-bottom: 25px;
     text-transform: capitalize;
     text-shadow: 2px gray;
-    margin-left: -120px;
+    margin-left: -150px;
     
 }
 .about-text p{
     color: black;
     letter-spacing: 1px;
     line-height: 28px;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 45px;
     text-shadow: 4px 0 grey;
-    margin-left: -117px;
+    margin-left: -140px;
     opacity: 0.8;
+    font-weight: 600;
 }
 .contactinfo{
     display: none;
@@ -440,7 +447,7 @@ section .popup-box .button button{
     
 }
 .contact-text{
-    font-size: 55px;
+    font-size: 44px;
     line-height: 1;
     text-align: center;
 }
@@ -450,18 +457,18 @@ section .popup-box .button button{
 .contact-text h5{
     margin: 15px 0;
     color:black;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 .contact-text p{
     color: black;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 30px;
     margin-bottom: 2rem;
 }
 .contact-list{
     margin-bottom: 3rem;
-    font-size: 20px;
+    font-size: 16px;
 }
 .contact-list li{
     margin-bottom: 10px;
@@ -517,6 +524,7 @@ section .popup-box .button button{
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
     top:73px;
+    left: -80px;
    
 }
 .contact-form textarea{
@@ -541,7 +549,7 @@ section .popup-box .button button{
     cursor: pointer;
     width: 100px;
     font-weight: 300;
-    right: 48px;
+    right: 130px;
     
 }
 .contact-form .sendbutton:hover{
@@ -637,8 +645,14 @@ section .popup-box .button button{
 
 
 .message .success{
-    bottom:290px;
-    left:70px
+    bottom:230px;
+    left:80px;
+    font-size: 15px;
+}
+.danger{
+    position: absolute;
+    top:85px;
+    left:80px;
 }
 section .popup-box{
     top:45px;
@@ -650,8 +664,8 @@ section .popup-box{
     transition: all 1s ease-in-out;
  }
  .toggle-button .hamburgerBar{
-    width: 35px;
-    height: 4px;
+    width: 23px;
+    height: 0.5px;
     background: #faf9f9;
     box-shadow: 5px 5px 5px rgb(56, 55, 55);
     border-radius: 5px;
@@ -661,18 +675,18 @@ section .popup-box{
  .toggle-button .hamburgerBar::after{
      content: "";
      position: absolute;
-     width: 35px;
-     height: 4px;
+     width: 23px;
+     height: 0.4px;
      background: #faf9f9;
      box-shadow: 5px 5px 5px rgb(56, 55, 55);
      border-radius: 5px;
      transition: all 1s ease-in-out;
  }
  .toggle-button .hamburgerBar::before{
-     transform: translateY(-12px);
+     transform: translateY(-9px);
  }
  .toggle-button .hamburgerBar::after{
-     transform: translateY(12px);
+     transform: translateY(8px);
  }
  .toggle-button.open .hamburgerBar{
      transform: translateX(-50px);
@@ -710,6 +724,7 @@ section .popup-box{
    }
    .header .logo{
     margin: 0px;
+    font-size: 24px;
    }
    .header .text{
     font-size: 35px;
@@ -723,8 +738,9 @@ section .popup-box{
    }
 
    .main-home .homeImg{
-    width: 70%;
+    width:65%;
     height: 50%;
+    left: 60px;
    }
    .main-text{
     top: 200px;
@@ -733,18 +749,26 @@ section .popup-box{
    .main-text h1{
     position: absolute;
     top: 45px;
-    font-size: 32px;
+    font-size: 29px;
     left: -7px;
     line-height: 50px;
    }
    .main-text p{
     position: absolute;
-    top: 230px
+    top: 200px;
+    font-size: 14px;
    }
    .main-button{
     position: absolute;
-    bottom: 330px;
+    bottom: 250px;
     font-size: 20px;
+    width: 142px;
+    height: 38px;
+   }
+   section .popup img{
+    height: 50px;
+    width: 50px;
+    
    }
    section .popup-box{
     height: 338px;
@@ -752,15 +776,15 @@ section .popup-box{
 
    section .popup-box .button {
     position: absolute;
-    top:275px;
+    top:165px;
     left:200px;
    }
 
    .about .main img{
-    width: 330px;
+    width: 230px;
     position: absolute;
-    top: 170px;
-    left: 40px;
+    top: 186px;
+    left: 70px;
     margin: 0px;
    
    }
@@ -768,24 +792,26 @@ section .popup-box{
     position: absolute;
     top: 105px;
     left: 115px;
-    font-size: 45px;
+    font-size: 35px;
     margin: 0px;
    }
    .about-text h4{
     position: absolute;
     margin: 0px;
-    top: 555px;
-    left: 60px;
+    top: 150px;
+    left: 104px;
    }
 
 .about-text p{
     letter-spacing: 0px;
     position: absolute;
     margin: 0px;
+    font-weight: 500;
     text-align: justify;
-    bottom: 10px;
-    left: 80px;
-    width: 280px
+    bottom: 50px;
+    left: 50px;
+    width: 280px;
+    font-size: 12px;
    }  
 
 
@@ -794,45 +820,56 @@ section .popup-box{
     min-height: 1082px;
 
    }
-
+.contact-text{
+    font-size: 30px;
+}
    .contact-text h2{
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     top: 125px;
-    left: 100px;
+    left: 90px;
    }
    .contact-text h5{
     position: absolute;
     top: 175px;
-    left: 145px;
+    left: 140px;
+    font-size: 14px;
    }
   .contact-text p{
     position: absolute;
     top: 215px;
-    left: 70px;
+    left: 60px;
     text-align: justify;
-    width: 300px;
+    width: 245px;
+    font-size: 13px;
   }
 
   .contact-icons{
     position: absolute;
     top: 425px;
-    left: 130px;
+    left: 115px;
   }
 
   .contact-list{
     position: absolute;
     top: 360px;
-    left: 110px;
+    left: 100px;
+    font-size: 14px;
   }
 
   .contact-form{
-    width: 250px;
+    width: 210px;
     position: absolute;
     top: 445px;
     left: 45px;
   
 
+  }
+  .contact-form .sendbutton {
+    left: 100px;
+  }
+  .contact-form form input, form textarea{
+    left:0;
   }
   .products{
     margin: 0px;
@@ -845,8 +882,8 @@ section .popup-box{
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    bottom:220px;
+    width: 80%;
+    bottom:180px;
     transition:all 0.5s ease-in-out;
     opacity: 0;
     
@@ -854,6 +891,8 @@ section .popup-box{
     
     
 }
+
+
 
 
 .Parent{
@@ -878,11 +917,22 @@ section .popup-box{
     
 
 }
+
+
+.profile-text .text .name{
+    font-size: 17px;
+    
+}
+
+.profile-text .text .purpose{
+    font-size: 11px;
+    font-weight: 600;
+}
 section .popup-box textarea{
     padding:12px;
-    height: 100px;
-    width:100%;
-    margin-top: -44px;
+    height: 130px;
+    width:93%;
+   
     border-radius: 10px;
     outline:none;
     border: 1px solid rgb(219, 216, 216);
@@ -890,12 +940,16 @@ section .popup-box textarea{
     font-size: 15px;
     font-weight: 400;
     background: rgb(219, 216, 216);
-
+    position: absolute;
+    top: 120px;
+    left: 9px;
 }
 section .popup-box .button{
     display: flex;
     justify-content: end;
-    margin-top: 16px;
+    position: absolute;
+    right: 30px;
+    
     
 }
 }
@@ -913,12 +967,12 @@ section .popup-box .button{
         position: absolute;
         justify-content: center; 
         align-items: center; 
-        top: 74px;
+        top: 64px;
         padding: 42px;
         border-radius: 0px 0px 12px 12px;
         line-height: 40px;
-        right: -48px;
-        width: 794px;
+        right: -62px;
+        width: 797px;
         height: 200px;
         box-shadow: 5px 5px 5px rgb(56, 55, 55);
         animation: openMenu 1s;
@@ -934,13 +988,13 @@ section .popup-box .button{
     display: flex;
     position: relative;
     right: 25px;
-    top: -20px;
+    top: -10px;
     cursor: pointer;
     transition: all 1s ease-in-out;
  }
  .toggle-button .hamburgerBar{
-    width: 35px;
-    height: 4px;
+    width: 26px;
+    height: 0.4px;
     background: #faf9f9;
     box-shadow: 5px 5px 5px rgb(56, 55, 55);
     border-radius: 5px;
@@ -950,18 +1004,18 @@ section .popup-box .button{
  .toggle-button .hamburgerBar::after{
      content: "";
      position: absolute;
-     width: 35px;
-     height: 4px;
+     width: 26px;
+     height: 0.4px;
      background: #faf9f9;
      box-shadow: 5px 5px 5px rgb(56, 55, 55);
      border-radius: 5px;
      transition: all 1s ease-in-out;
  }
  .toggle-button .hamburgerBar::before{
-     transform: translateY(-12px);
+     transform: translateY(-9px);
  }
  .toggle-button .hamburgerBar::after{
-     transform: translateY(12px);
+     transform: translateY(8px);
  }
  .toggle-button.open .hamburgerBar{
      transform: translateX(-50px);
@@ -971,9 +1025,12 @@ section .popup-box .button{
  }
  
  .toggle-button.open .hamburgerBar::before{
+    box-shadow:none;
      transform: rotate(45deg) translate(35px,-35px);
+
  }
  .toggle-button.open .hamburgerBar::after{
+    box-shadow:none;
      transform:  rotate(-45deg) translate(35px,35px);
  }
     .navbar ul {
@@ -1006,9 +1063,9 @@ section .popup-box .button{
       .homeImg{
         position: absolute;
         height: auto;
-        width:330px;
+        width:300px;
         box-shadow: 5px 5px 5px rgb(56, 55, 55);
-        top:185px;
+        top:230px;
         right:55px;
         border-radius: 10px;
         opacity: 0.6;
@@ -1016,7 +1073,7 @@ section .popup-box .button{
     }
     .homeImg:hover{
         opacity: 1;
-        width: 360px;
+        width: 340px;
         
         
     }
@@ -1028,13 +1085,13 @@ section .popup-box .button{
     }
     .main-text h5{
         color: rgb(157, 15, 15);
-        font-size: 18px;
+        font-size: 17px;
         text-transform: capitalize;
         font-weight: 500;
     }
     .main-text h1{
         color:black;
-        font-size: 55px;
+        font-size: 50px;
         text-transform: capitalize;
         line-height: 1.1;
         font-weight: 600;
@@ -1042,7 +1099,7 @@ section .popup-box .button{
     }
     .main-text p{
         color: black;
-        font-size: 19px;
+        font-size: 15px;
         font-style: italic;
         margin-bottom: 20px;
     
@@ -1058,7 +1115,7 @@ section .popup-box .button{
         padding: 12px 25px;
         position: absolute;
         left: 80px;
-        bottom: 150px;
+        bottom: 210px;
         transition: width 0.7s ease-in-out;
         text-decoration: none;
     }
@@ -1077,7 +1134,7 @@ section .popup-box .button{
     .about img{
         height:auto;
         margin-top: 56px;
-        width:280px;
+        width:260px;
         box-shadow: 5px 5px 5px rgb(56, 55, 55);
         border-radius: 10px;
         opacity: 0.6;
@@ -1086,7 +1143,7 @@ section .popup-box .button{
     }
     .about img:hover{
         opacity: 1;
-        width:310px;
+        width:286px;
         
       
     }
@@ -1104,7 +1161,7 @@ section .popup-box .button{
     }
     .about-text h2{
         color: black;
-        font-size: 45px;
+        font-size: 42px;
         text-transform: capitalize;
         margin-top: 100px;
         margin-left: -120px;
@@ -1113,7 +1170,7 @@ section .popup-box .button{
     .about-text h4{
         color: rgb(162, 13, 13);
         letter-spacing: 2px;
-        font-size: 19px;
+        font-size: 16px;
         margin-bottom: 25px;
         text-transform: capitalize;
         text-shadow: 2px gray;
@@ -1124,7 +1181,7 @@ section .popup-box .button{
         color: black;
         letter-spacing: 1px;
         line-height: 28px;
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 45px;
         text-align: justify;
         text-shadow: 4px 0 grey;
@@ -1134,10 +1191,12 @@ section .popup-box .button{
 
 
     .contact-text{
-        font-size: 40px;
+        font-size: 35px;
         line-height: 1;
         text-align: center;
         width: 150%;
+        
+      
     }
     .contact-text h2 span{
         color:rgb(162, 13, 13);
@@ -1145,18 +1204,18 @@ section .popup-box .button{
     .contact-text h5{
         margin: 15px 0;
         color:black;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
     }
     .contact-text p{
         color: black;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 30px;
         margin-bottom: 2rem;
     }
     .contact-list{
         margin-bottom: 3rem;
-        font-size: 17px;
+        font-size: 14px;
     }
     .contact-list li{
         margin-bottom: 10px;
@@ -1197,7 +1256,7 @@ section .popup-box .button{
     }
     .contact-form form{
         position: relative;
-        right: 30px;
+        right: 1px;
         
     }
     .contact-form form input,form textarea{
@@ -1238,15 +1297,16 @@ section .popup-box .button{
         cursor: pointer;
         width: 100px;
         font-weight: 300;
-        right: 20px;
+        right:90px;
         
     }
 
     
     .message .success{
        
-        bottom: 380px;
-        left:250px;
+        bottom: 230px;
+        left:270px;
+        font-size: 18px;
     }
     section .popup{
         position: absolute;
@@ -1256,7 +1316,7 @@ section .popup-box .button{
         justify-content: center;
         height: 0%;
         width: 100%;
-        bottom:527px;
+        bottom:400px;
         transition:all 0.5s ease-in-out;
         opacity: 0;
         
@@ -1291,12 +1351,14 @@ section .popup-box .button{
     }
     section .popup-box .button {
         
-        margin-top: 83px;
+        margin-top: 151px;
     }
     section .popup-box textarea {
         
-        margin-top: -37px;
-        height: 113px;
+        margin-top: -2px;
+        height: 148px;
+        left: 32px;
+        width: 334px;
         
     }
 }
