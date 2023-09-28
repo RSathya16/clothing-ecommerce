@@ -760,9 +760,9 @@ section .popup-box{
    }
    .main-button{
     position: absolute;
-    bottom: 250px;
+    bottom: 338px;
     font-size: 20px;
-    width: 142px;
+    width: 166px;
     height: 38px;
    }
    section .popup img{
