@@ -764,6 +764,7 @@ section .popup-box{
     font-size: 20px;
     width: 166px;
     height: 38px;
+    padding: 7px 10px 8px 12px
    }
    section .popup img{
     height: 50px;
