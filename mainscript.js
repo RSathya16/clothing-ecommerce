@@ -1,5 +1,5 @@
-import productAPI from "./.vscode/api.json" assert { type: "json" };
-import closepopup from "./.vscode/closepoup.js";
+import productAPI from "./api.json" assert { type: "json" };
+import closepopup from "./closepopup.js";
 /*const test = fetch('https://fakestoreapi.com/products/1')
             .then(res=>res.json())
             .then(json=>console.log(json))
